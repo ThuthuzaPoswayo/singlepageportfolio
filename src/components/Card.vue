@@ -5,7 +5,7 @@
 </div>
 <div class="card-body">
     <slot name="cardBody">
-        
+
     </slot>
 </div>
   </div>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-
+    name: "CardComp"
 }
 </script>
 
