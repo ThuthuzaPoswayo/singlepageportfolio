@@ -1,8 +1,7 @@
 <template>
   <div class="container">
 <div class="row">
- <img src= "https://thuthuzaposwayo.github.io/All-images/images/" alt="logo"
- class="img-fluid w-75 shadow rounded-top" loading="lazy">
+ <img src= "https://thuthuzaposwayo.github.io/All-images/images/Me.jpeg" alt="logo" class="img-fluid w-75 shadow rounded-top" loading="lazy">
 </div>
 <div class="col">
     <div id="details">
@@ -10,24 +9,21 @@
         <p v-if="title"> I am a 
             <span>{{title}}</span>
         </p>
-<div v-else class="d-flex justify-content-center">
-    <div class="spinner-border" role="status">
-        
-    </div>
-</div>
+<Spinner v-else />
     </div>
 </div>
   </div>
 </template>
 
 <script setup>
-
+import Spinner from './Spinner.vue'
 import { computed, onMounted, ref} from 'vue'
 import  { useStore } from 'vuex'
 const store =  useStore()
 const jobTitle = computed(() => store.state.jobTitle)
 const title = ref('Front-End Wed Developer')
 const cnt = ref(-1)
+
 function repeat() {
     try{
         if(cnt.value == jobTitle.value?.length) cnt.value = 0;

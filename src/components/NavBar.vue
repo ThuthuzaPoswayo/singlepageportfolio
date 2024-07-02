@@ -15,13 +15,27 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">About</a>
         </li>
         
 
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#">Resume</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Testimonials</a>
+        </li>
+
+
+        
+
+
+
       </ul>
      
     </div>

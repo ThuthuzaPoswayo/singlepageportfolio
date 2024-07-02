@@ -50,3 +50,21 @@ img[ alt='logo']{
   ::-webkit-scrollbar{
     display:none;
   }
+
+  section {
+    scroll-margin-block: 5rem
+  }
+
+#about img{
+  padding: 0
+  ;
+}
+
+
+/*media query*/
+  @media screen and (width < 800px) {
+    #landing .row {
+      display: block;
+      height: auto;
+    }
+  }
